@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Papa Ji ke Shuddh Laddu</title>
+
+  <style>
+    :root {
+      --primary: #C62828;
+      --secondary: #FBC02D;
+      --accent: #D4AF37;
+      --bg: #FFF8E1;
+      --text: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: var(--primary);
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+    }
+
+    .hero img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .hero h1 {
+      font-size: 28px;
+      margin: 15px 0;
+      color: var(--primary);
+    }
+
+    .hero p {
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      background: var(--secondary);
+      color: black;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: var(--accent);
+      color: white;
+    }
+
+    /* PRODUCTS */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #eee;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .price {
+      color: var(--primary);
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    /* WHY US */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      text-align: center;
+    }
+
+    .feature {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonial {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .stars {
+      color: gold;
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+    }
+
+    .whatsapp-btn {
+      background: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    /* STICKY WHATSAPP */
+    .sticky-whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Papa Ji ke Shuddh Laddu
+</header>
+
+<section class="hero">
+  <img src="https://via.placeholder.com/800x300" alt="Laddu Banner">
+  <h1>हर बाइट में पापा का प्यार ❤️</h1>
+  <p>100% शुद्ध देसी घी से बने, घर जैसा स्वाद</p>
+  <button class="btn">Order Now</button>
+</section>
+
+<section>
+  <h2>About Us</h2>
+  <p style="text-align:center;">
+    Papa Ji started making laddus for his family with pure love and desi ghee.
+    Today, we deliver that same taste to your home.
+  </p>
+</section>
+
+<section>
+  <h2>Our Products</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Besan Laddu">
+      <h3>Besan Laddu</h3>
+      <p class="price">₹400</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Dry Fruit Laddu">
+      <h3>Dry Fruit Laddu</h3>
+      <p class="price">₹800</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300" alt="Atta Laddu">
+      <h3>Atta Laddu</h3>
+      <p class="price">₹500</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Why Choose Us</h2>
+  <div class="features">
+    <div class="feature">100% Desi Ghee</div>
+    <div class="feature">Homemade with Love</div>
+    <div class="feature">No Preservatives</div>
+    <div class="feature">Fresh Delivery</div>
+  </div>
+</section>
+
+<section>
+  <h2>Customer Reviews</h2>
+
+  <div class="testimonial">
+    <div class="stars">★★★★★</div>
+    <p>“Absolutely delicious! Just like home-made laddus.”</p>
+  </div>
+
+  <div class="testimonial">
+    <div class="stars">★★★★★</div>
+    <p>“Pure ghee taste, amazing quality!”</p>
+  </div>
+
+</section>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p><strong>Ajay Kumar</strong></p>
+  <p>📞 9898213482</p>
+  <p>📍 Housing Colony, Gonda, Uttar Pradesh, 271001</p>
+  <p>Shop No. 4</p>
+
+  <a class="whatsapp-btn" href="https://wa.me/919898213482" target="_blank">
+    Order on WhatsApp
+  </a>
+</section>
+
+<footer>
+  <p>FSSAI No: XXXXXXXX</p>
+  <p><a href="#" style="color:#FBC02D;">Instagram</a></p>
+  <p>Made with ❤️ in India</p>
+</footer>
+
+<a href="https://wa.me/919898213482" class="sticky-whatsapp" target="_blank">
+  💬
+</a>
+
+</body>
+</html>
